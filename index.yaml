@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  provider-vsphere:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2021-10-11T14:03:58.404716688+02:00"
+    description: A Helm chart for Krateo Runtime vSphere Provider
+    digest: dc056aa34c62f760efdd79d1ae90ce81c7f2069da48641a48e3752e23e262dc1
+    name: provider-vsphere
+    type: application
+    urls:
+    - https://github.com/projectkerberus/runtime-helm-charts/releases/download/provider-vsphere-0.0.0/provider-vsphere-0.0.0.tgz
+    version: 0.0.0
+generated: "2021-10-11T14:03:58.404739054+02:00"
