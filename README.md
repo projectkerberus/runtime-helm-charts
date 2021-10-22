@@ -17,7 +17,7 @@ To install this provider type:
 ```sh
 $ helm repo add krateo-runtime https://krateo.io/runtime-helm-charts
 $ helm repo update
-$ helm install provider-argocd --namespace argo-system krateo-runtime/provider-argocd
+$ helm install provider-argocd --namespace $(NAMESPACE) krateo-runtime/provider-argocd
 ```
 
 ## Provider vSphere
@@ -27,5 +27,5 @@ To install this provider type:
 ```sh
 $ helm repo add krateo-runtime https://krateo.io/runtime-helm-charts
 $ helm repo update
-$ helm install provider-vsphere --namespace default krateo-runtime/provider-vsphere
+$ helm install provider-vsphere --namespace $(NAMESPACE) krateo-runtime/provider-vsphere
 ```
