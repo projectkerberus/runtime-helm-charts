@@ -37,6 +37,12 @@ vsphere.package: clean
 	$(CR) index --owner $(ORG_NAME) --git-repo $(GIT_REPO) --charts-repo $(CHART_REPO_URL) \
 	--package-path $(PACKAGE_PATH) --push
 
+## vsphere.package: Create the vSphere Provider package
+argocd.package: clean
+	$(HELM) package charts/provider-argocd --destination $(PACKAGE_PATH)
+	$(CR) upload --owner $(ORG_NAME) --git-repo $(GIT_REPO) --package-path $(PACKAGE_PATH)
+	$(CR) index --owner $(ORG_NAME) --git-repo $(GIT_REPO) --charts-repo $(CHART_REPO_URL) \
+	--package-path $(PACKAGE_PATH) --push
 
 clean:
 	rm -f $(PACKAGE_PATH)/*
