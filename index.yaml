@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  provider-argocd:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2021-10-22T14:55:59.020665057+02:00"
+    description: A Helm chart for Krateo Runtime ArgoCD Provider
+    digest: 12e8ce6ad84c81d162bc7c67059d6a53b29fdd4d265c394fd7b6e9feedb0fdc5
+    name: provider-argocd
+    type: application
+    urls:
+    - https://github.com/projectkerberus/runtime-helm-charts/releases/download/provider-argocd-0.0.0/provider-argocd-0.0.0.tgz
+    version: 0.0.0
   provider-vsphere:
   - apiVersion: v2
     appVersion: 0.0.0
@@ -11,4 +22,4 @@ entries:
     urls:
     - https://github.com/projectkerberus/runtime-helm-charts/releases/download/provider-vsphere-0.0.0/provider-vsphere-0.0.0.tgz
     version: 0.0.0
-generated: "2021-10-11T14:03:58.404739054+02:00"
+generated: "2021-10-22T14:55:59.020684404+02:00"
