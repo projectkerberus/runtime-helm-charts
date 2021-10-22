@@ -6,8 +6,8 @@ Fetching private GitHub repos:
 
 ```sh
 $ kubectl create secret docker-registry cr-token \
-	--namespace $(NAMESPACE) --docker-server=ghcr.io \
-	--docker-password=$(GITHUB_TOKEN) --docker-username=$(ORG_NAME)
+  --namespace $(NAMESPACE) --docker-server=ghcr.io \
+  --docker-password=$(GITHUB_TOKEN) --docker-username=$(ORG_NAME)
 ```
 
 ## Provider ArgoCD
