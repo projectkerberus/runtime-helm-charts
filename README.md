@@ -1,4 +1,4 @@
-# runtime-helm-charts
+# Krateo Runtime Operators Helm Charts
 
 This repo contains Krateo Runtime Operators.
 
